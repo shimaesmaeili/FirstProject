@@ -1,7 +1,8 @@
 import java.math.BigDecimal;
+import java.util.Comparator;
 
-public class Deposit {
-    private int customerNumber;
+public class Deposit implements Comparable<Deposit> {
+    public int customerNumber;
     private int durationInDays;
 
     private BigDecimal depositBalance;
@@ -31,5 +32,10 @@ public class Deposit {
 
     public void setInterest(BigDecimal interest) {
         this.interest = interest;
+    }
+
+    @Override
+    public int compareTo(Deposit o1) {
+        return -1*this.getInterest().compareTo(o1.getInterest());
     }
 }
