@@ -1,8 +1,5 @@
 import java.math.BigDecimal;
 
-/**
- * Created by $Hamid on 6/13/2017.
- */
 public class Deposit {
     private int customerNumber;
     private int durationInDays;

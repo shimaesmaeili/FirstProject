@@ -1,8 +1,5 @@
 import java.math.BigDecimal;
 
-/**
- * Created by $Hamid on 6/13/2017.
- */
 public class ShortTerm extends Deposit {
     double interestRate;
 
@@ -15,7 +12,4 @@ public class ShortTerm extends Deposit {
         return interestRate;
     }
 
-    //    public double computeInterest(){
-//        return interestRate*depositBalance*durationInDays/36500;
-//    }
 }
