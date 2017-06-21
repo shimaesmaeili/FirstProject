@@ -1,5 +1,4 @@
 import java.math.BigDecimal;
-import java.util.Comparator;
 
 public class Deposit implements Comparable<Deposit> {
     public int customerNumber;
