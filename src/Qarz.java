@@ -1,10 +1,9 @@
 import java.math.BigDecimal;
 
-public class Qarz extends Deposit {
+public class Qarz implements DepositType {
     double interestRate;
 
-    public Qarz(int customerNumber, int durationInDays, BigDecimal depositBalance) {
-        super(customerNumber, durationInDays, depositBalance);
+    public Qarz() {
         interestRate = 0.0;
     }
 

@@ -8,10 +8,13 @@ public class Deposit implements Comparable<Deposit> {
     private BigDecimal depositBalance;
     private BigDecimal interest;
 
-    public Deposit(int customerNumber, int durationInDays, BigDecimal depositBalance) {
+    DepositType depType;
+
+    public Deposit(DepositType name, int customerNumber, int durationInDays, BigDecimal depositBalance) {
         this.customerNumber = customerNumber;
         this.durationInDays = durationInDays;
         this.depositBalance = depositBalance;
+        depType = name;
     }
 
     public int getCustomerNumber() {
@@ -24,6 +27,10 @@ public class Deposit implements Comparable<Deposit> {
 
     public int getDurationInDays() {
         return durationInDays;
+    }
+
+    public double getInterestRate() {
+        return depType.getInterestRate();
     }
 
     public BigDecimal getInterest() {
