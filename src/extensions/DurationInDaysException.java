@@ -1,6 +1,7 @@
 package extensions;
 
 public class DurationInDaysException extends Exception{
+
     DurationInDaysException(){
         super();
     }
